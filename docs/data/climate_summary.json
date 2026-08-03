@@ -1,0 +1,962 @@
+[
+  {
+    "year": 2015,
+    "month": 1,
+    "temperature": 13.19,
+    "precipitation": 0.94,
+    "humidity": 78.1,
+    "solar_radiation": 12.54
+  },
+  {
+    "year": 2015,
+    "month": 2,
+    "temperature": 17.58,
+    "precipitation": 1.33,
+    "humidity": 72.0,
+    "solar_radiation": 17.29
+  },
+  {
+    "year": 2015,
+    "month": 3,
+    "temperature": 20.21,
+    "precipitation": 3.29,
+    "humidity": 70.94,
+    "solar_radiation": 19.53
+  },
+  {
+    "year": 2015,
+    "month": 4,
+    "temperature": 26.94,
+    "precipitation": 1.64,
+    "humidity": 52.67,
+    "solar_radiation": 23.87
+  },
+  {
+    "year": 2015,
+    "month": 5,
+    "temperature": 32.94,
+    "precipitation": 0.47,
+    "humidity": 31.32,
+    "solar_radiation": 26.99
+  },
+  {
+    "year": 2015,
+    "month": 6,
+    "temperature": 32.43,
+    "precipitation": 2.25,
+    "humidity": 51.37,
+    "solar_radiation": 22.97
+  },
+  {
+    "year": 2015,
+    "month": 7,
+    "temperature": 28.69,
+    "precipitation": 8.92,
+    "humidity": 78.45,
+    "solar_radiation": 16.96
+  },
+  {
+    "year": 2015,
+    "month": 8,
+    "temperature": 28.46,
+    "precipitation": 5.72,
+    "humidity": 81.71,
+    "solar_radiation": 16.8
+  },
+  {
+    "year": 2015,
+    "month": 9,
+    "temperature": 28.59,
+    "precipitation": 1.45,
+    "humidity": 65.87,
+    "solar_radiation": 20.43
+  },
+  {
+    "year": 2015,
+    "month": 10,
+    "temperature": 26.19,
+    "precipitation": 0.52,
+    "humidity": 58.19,
+    "solar_radiation": 18.16
+  },
+  {
+    "year": 2015,
+    "month": 11,
+    "temperature": 21.37,
+    "precipitation": 0.06,
+    "humidity": 61.03,
+    "solar_radiation": 14.86
+  },
+  {
+    "year": 2015,
+    "month": 12,
+    "temperature": 15.73,
+    "precipitation": 0.01,
+    "humidity": 62.32,
+    "solar_radiation": 13.83
+  },
+  {
+    "year": 2016,
+    "month": 1,
+    "temperature": 14.83,
+    "precipitation": 0.04,
+    "humidity": 73.06,
+    "solar_radiation": 14.47
+  },
+  {
+    "year": 2016,
+    "month": 2,
+    "temperature": 17.68,
+    "precipitation": 0.71,
+    "humidity": 61.31,
+    "solar_radiation": 17.69
+  },
+  {
+    "year": 2016,
+    "month": 3,
+    "temperature": 23.27,
+    "precipitation": 1.32,
+    "humidity": 56.61,
+    "solar_radiation": 21.12
+  },
+  {
+    "year": 2016,
+    "month": 4,
+    "temperature": 30.28,
+    "precipitation": 0.07,
+    "humidity": 29.3,
+    "solar_radiation": 25.01
+  },
+  {
+    "year": 2016,
+    "month": 5,
+    "temperature": 32.83,
+    "precipitation": 0.93,
+    "humidity": 41.97,
+    "solar_radiation": 25.49
+  },
+  {
+    "year": 2016,
+    "month": 6,
+    "temperature": 33.12,
+    "precipitation": 2.18,
+    "humidity": 58.1,
+    "solar_radiation": 22.99
+  },
+  {
+    "year": 2016,
+    "month": 7,
+    "temperature": 28.88,
+    "precipitation": 13.15,
+    "humidity": 82.42,
+    "solar_radiation": 15.41
+  },
+  {
+    "year": 2016,
+    "month": 8,
+    "temperature": 28.21,
+    "precipitation": 6.63,
+    "humidity": 83.71,
+    "solar_radiation": 15.79
+  },
+  {
+    "year": 2016,
+    "month": 9,
+    "temperature": 28.5,
+    "precipitation": 0.36,
+    "humidity": 73.2,
+    "solar_radiation": 19.45
+  },
+  {
+    "year": 2016,
+    "month": 10,
+    "temperature": 26.24,
+    "precipitation": 0.37,
+    "humidity": 57.61,
+    "solar_radiation": 18.29
+  },
+  {
+    "year": 2016,
+    "month": 11,
+    "temperature": 21.21,
+    "precipitation": 0.0,
+    "humidity": 56.1,
+    "solar_radiation": 15.91
+  },
+  {
+    "year": 2016,
+    "month": 12,
+    "temperature": 17.09,
+    "precipitation": 0.0,
+    "humidity": 68.19,
+    "solar_radiation": 14.19
+  },
+  {
+    "year": 2017,
+    "month": 1,
+    "temperature": 14.12,
+    "precipitation": 1.79,
+    "humidity": 73.71,
+    "solar_radiation": 13.91
+  },
+  {
+    "year": 2017,
+    "month": 2,
+    "temperature": 17.51,
+    "precipitation": 0.12,
+    "humidity": 64.36,
+    "solar_radiation": 18.25
+  },
+  {
+    "year": 2017,
+    "month": 3,
+    "temperature": 22.07,
+    "precipitation": 0.66,
+    "humidity": 50.55,
+    "solar_radiation": 21.98
+  },
+  {
+    "year": 2017,
+    "month": 4,
+    "temperature": 30.02,
+    "precipitation": 0.19,
+    "humidity": 30.5,
+    "solar_radiation": 25.28
+  },
+  {
+    "year": 2017,
+    "month": 5,
+    "temperature": 32.59,
+    "precipitation": 0.33,
+    "humidity": 35.87,
+    "solar_radiation": 25.4
+  },
+  {
+    "year": 2017,
+    "month": 6,
+    "temperature": 32.0,
+    "precipitation": 2.97,
+    "humidity": 55.47,
+    "solar_radiation": 22.88
+  },
+  {
+    "year": 2017,
+    "month": 7,
+    "temperature": 29.46,
+    "precipitation": 4.14,
+    "humidity": 76.71,
+    "solar_radiation": 17.26
+  },
+  {
+    "year": 2017,
+    "month": 8,
+    "temperature": 28.86,
+    "precipitation": 5.55,
+    "humidity": 78.77,
+    "solar_radiation": 16.13
+  },
+  {
+    "year": 2017,
+    "month": 9,
+    "temperature": 28.27,
+    "precipitation": 3.06,
+    "humidity": 74.53,
+    "solar_radiation": 17.65
+  },
+  {
+    "year": 2017,
+    "month": 10,
+    "temperature": 26.85,
+    "precipitation": 0.0,
+    "humidity": 56.74,
+    "solar_radiation": 17.8
+  },
+  {
+    "year": 2017,
+    "month": 11,
+    "temperature": 20.14,
+    "precipitation": 0.01,
+    "humidity": 62.6,
+    "solar_radiation": 13.7
+  },
+  {
+    "year": 2017,
+    "month": 12,
+    "temperature": 15.55,
+    "precipitation": 0.25,
+    "humidity": 63.39,
+    "solar_radiation": 11.79
+  },
+  {
+    "year": 2018,
+    "month": 1,
+    "temperature": 13.55,
+    "precipitation": 0.22,
+    "humidity": 70.32,
+    "solar_radiation": 13.76
+  },
+  {
+    "year": 2018,
+    "month": 2,
+    "temperature": 17.7,
+    "precipitation": 0.24,
+    "humidity": 63.14,
+    "solar_radiation": 16.39
+  },
+  {
+    "year": 2018,
+    "month": 3,
+    "temperature": 23.7,
+    "precipitation": 0.14,
+    "humidity": 48.42,
+    "solar_radiation": 20.78
+  },
+  {
+    "year": 2018,
+    "month": 4,
+    "temperature": 28.55,
+    "precipitation": 1.0,
+    "humidity": 40.37,
+    "solar_radiation": 22.09
+  },
+  {
+    "year": 2018,
+    "month": 5,
+    "temperature": 31.97,
+    "precipitation": 0.96,
+    "humidity": 38.16,
+    "solar_radiation": 22.55
+  },
+  {
+    "year": 2018,
+    "month": 6,
+    "temperature": 33.58,
+    "precipitation": 2.59,
+    "humidity": 51.67,
+    "solar_radiation": 20.65
+  },
+  {
+    "year": 2018,
+    "month": 7,
+    "temperature": 29.8,
+    "precipitation": 7.46,
+    "humidity": 78.35,
+    "solar_radiation": 16.96
+  },
+  {
+    "year": 2018,
+    "month": 8,
+    "temperature": 28.92,
+    "precipitation": 4.69,
+    "humidity": 81.61,
+    "solar_radiation": 16.56
+  },
+  {
+    "year": 2018,
+    "month": 9,
+    "temperature": 27.2,
+    "precipitation": 5.62,
+    "humidity": 79.83,
+    "solar_radiation": 16.84
+  },
+  {
+    "year": 2018,
+    "month": 10,
+    "temperature": 24.52,
+    "precipitation": 0.09,
+    "humidity": 64.48,
+    "solar_radiation": 17.48
+  },
+  {
+    "year": 2018,
+    "month": 11,
+    "temperature": 20.32,
+    "precipitation": 0.06,
+    "humidity": 62.83,
+    "solar_radiation": 13.67
+  },
+  {
+    "year": 2018,
+    "month": 12,
+    "temperature": 14.1,
+    "precipitation": 0.03,
+    "humidity": 67.45,
+    "solar_radiation": 12.5
+  },
+  {
+    "year": 2019,
+    "month": 1,
+    "temperature": 12.92,
+    "precipitation": 0.86,
+    "humidity": 70.32,
+    "solar_radiation": 12.91
+  },
+  {
+    "year": 2019,
+    "month": 2,
+    "temperature": 15.07,
+    "precipitation": 1.74,
+    "humidity": 75.29,
+    "solar_radiation": 14.54
+  },
+  {
+    "year": 2019,
+    "month": 3,
+    "temperature": 20.3,
+    "precipitation": 0.44,
+    "humidity": 57.29,
+    "solar_radiation": 19.5
+  },
+  {
+    "year": 2019,
+    "month": 4,
+    "temperature": 29.11,
+    "precipitation": 0.18,
+    "humidity": 39.97,
+    "solar_radiation": 22.27
+  },
+  {
+    "year": 2019,
+    "month": 5,
+    "temperature": 32.14,
+    "precipitation": 0.11,
+    "humidity": 31.45,
+    "solar_radiation": 22.75
+  },
+  {
+    "year": 2019,
+    "month": 6,
+    "temperature": 34.65,
+    "precipitation": 0.36,
+    "humidity": 40.33,
+    "solar_radiation": 21.94
+  },
+  {
+    "year": 2019,
+    "month": 7,
+    "temperature": 30.62,
+    "precipitation": 5.96,
+    "humidity": 71.55,
+    "solar_radiation": 18.06
+  },
+  {
+    "year": 2019,
+    "month": 8,
+    "temperature": 28.86,
+    "precipitation": 6.42,
+    "humidity": 83.0,
+    "solar_radiation": 17.79
+  },
+  {
+    "year": 2019,
+    "month": 9,
+    "temperature": 28.32,
+    "precipitation": 2.75,
+    "humidity": 80.7,
+    "solar_radiation": 16.83
+  },
+  {
+    "year": 2019,
+    "month": 10,
+    "temperature": 25.8,
+    "precipitation": 0.48,
+    "humidity": 61.74,
+    "solar_radiation": 16.38
+  },
+  {
+    "year": 2019,
+    "month": 11,
+    "temperature": 20.96,
+    "precipitation": 0.85,
+    "humidity": 66.7,
+    "solar_radiation": 12.78
+  },
+  {
+    "year": 2019,
+    "month": 12,
+    "temperature": 12.5,
+    "precipitation": 0.32,
+    "humidity": 79.87,
+    "solar_radiation": 11.37
+  },
+  {
+    "year": 2020,
+    "month": 1,
+    "temperature": 12.63,
+    "precipitation": 2.13,
+    "humidity": 79.94,
+    "solar_radiation": 11.81
+  },
+  {
+    "year": 2020,
+    "month": 2,
+    "temperature": 15.96,
+    "precipitation": 0.97,
+    "humidity": 69.66,
+    "solar_radiation": 16.26
+  },
+  {
+    "year": 2020,
+    "month": 3,
+    "temperature": 19.81,
+    "precipitation": 2.1,
+    "humidity": 70.39,
+    "solar_radiation": 18.62
+  },
+  {
+    "year": 2020,
+    "month": 4,
+    "temperature": 26.96,
+    "precipitation": 0.18,
+    "humidity": 46.53,
+    "solar_radiation": 21.77
+  },
+  {
+    "year": 2020,
+    "month": 5,
+    "temperature": 31.09,
+    "precipitation": 1.1,
+    "humidity": 42.42,
+    "solar_radiation": 21.65
+  },
+  {
+    "year": 2020,
+    "month": 6,
+    "temperature": 32.31,
+    "precipitation": 0.36,
+    "humidity": 57.03,
+    "solar_radiation": 21.11
+  },
+  {
+    "year": 2020,
+    "month": 7,
+    "temperature": 30.8,
+    "precipitation": 3.67,
+    "humidity": 72.13,
+    "solar_radiation": 19.32
+  },
+  {
+    "year": 2020,
+    "month": 8,
+    "temperature": 29.02,
+    "precipitation": 6.74,
+    "humidity": 81.9,
+    "solar_radiation": 17.05
+  },
+  {
+    "year": 2020,
+    "month": 9,
+    "temperature": 29.68,
+    "precipitation": 1.28,
+    "humidity": 69.33,
+    "solar_radiation": 19.47
+  },
+  {
+    "year": 2020,
+    "month": 10,
+    "temperature": 25.95,
+    "precipitation": 0.0,
+    "humidity": 48.48,
+    "solar_radiation": 18.11
+  },
+  {
+    "year": 2020,
+    "month": 11,
+    "temperature": 19.12,
+    "precipitation": 0.44,
+    "humidity": 55.17,
+    "solar_radiation": 14.19
+  },
+  {
+    "year": 2020,
+    "month": 12,
+    "temperature": 14.71,
+    "precipitation": 0.04,
+    "humidity": 68.26,
+    "solar_radiation": 12.63
+  },
+  {
+    "year": 2021,
+    "month": 1,
+    "temperature": 13.06,
+    "precipitation": 0.86,
+    "humidity": 78.97,
+    "solar_radiation": 13.04
+  },
+  {
+    "year": 2021,
+    "month": 2,
+    "temperature": 18.09,
+    "precipitation": 0.4,
+    "humidity": 68.43,
+    "solar_radiation": 17.3
+  },
+  {
+    "year": 2021,
+    "month": 3,
+    "temperature": 24.54,
+    "precipitation": 0.05,
+    "humidity": 45.68,
+    "solar_radiation": 20.83
+  },
+  {
+    "year": 2021,
+    "month": 4,
+    "temperature": 28.84,
+    "precipitation": 0.09,
+    "humidity": 26.2,
+    "solar_radiation": 23.17
+  },
+  {
+    "year": 2021,
+    "month": 5,
+    "temperature": 29.71,
+    "precipitation": 4.75,
+    "humidity": 48.48,
+    "solar_radiation": 20.27
+  },
+  {
+    "year": 2021,
+    "month": 6,
+    "temperature": 31.93,
+    "precipitation": 0.78,
+    "humidity": 57.07,
+    "solar_radiation": 21.45
+  },
+  {
+    "year": 2021,
+    "month": 7,
+    "temperature": 31.08,
+    "precipitation": 9.1,
+    "humidity": 70.16,
+    "solar_radiation": 17.16
+  },
+  {
+    "year": 2021,
+    "month": 8,
+    "temperature": 29.22,
+    "precipitation": 4.03,
+    "humidity": 77.48,
+    "solar_radiation": 18.72
+  },
+  {
+    "year": 2021,
+    "month": 9,
+    "temperature": 27.52,
+    "precipitation": 4.9,
+    "humidity": 84.37,
+    "solar_radiation": 15.68
+  },
+  {
+    "year": 2021,
+    "month": 10,
+    "temperature": 25.31,
+    "precipitation": 1.09,
+    "humidity": 67.16,
+    "solar_radiation": 16.61
+  },
+  {
+    "year": 2021,
+    "month": 11,
+    "temperature": 19.55,
+    "precipitation": 0.0,
+    "humidity": 61.27,
+    "solar_radiation": 13.82
+  },
+  {
+    "year": 2021,
+    "month": 12,
+    "temperature": 14.45,
+    "precipitation": 0.5,
+    "humidity": 70.52,
+    "solar_radiation": 10.87
+  },
+  {
+    "year": 2022,
+    "month": 1,
+    "temperature": 12.14,
+    "precipitation": 1.96,
+    "humidity": 81.26,
+    "solar_radiation": 11.07
+  },
+  {
+    "year": 2022,
+    "month": 2,
+    "temperature": 15.68,
+    "precipitation": 0.83,
+    "humidity": 70.36,
+    "solar_radiation": 16.32
+  },
+  {
+    "year": 2022,
+    "month": 3,
+    "temperature": 24.62,
+    "precipitation": 0.05,
+    "humidity": 50.77,
+    "solar_radiation": 21.18
+  },
+  {
+    "year": 2022,
+    "month": 4,
+    "temperature": 32.09,
+    "precipitation": 0.0,
+    "humidity": 19.07,
+    "solar_radiation": 23.76
+  },
+  {
+    "year": 2022,
+    "month": 5,
+    "temperature": 32.94,
+    "precipitation": 0.89,
+    "humidity": 40.06,
+    "solar_radiation": 22.0
+  },
+  {
+    "year": 2022,
+    "month": 6,
+    "temperature": 33.4,
+    "precipitation": 1.59,
+    "humidity": 42.4,
+    "solar_radiation": 21.17
+  },
+  {
+    "year": 2022,
+    "month": 7,
+    "temperature": 29.62,
+    "precipitation": 7.18,
+    "humidity": 77.42,
+    "solar_radiation": 18.05
+  },
+  {
+    "year": 2022,
+    "month": 8,
+    "temperature": 29.11,
+    "precipitation": 2.59,
+    "humidity": 75.13,
+    "solar_radiation": 18.4
+  },
+  {
+    "year": 2022,
+    "month": 9,
+    "temperature": 28.65,
+    "precipitation": 5.63,
+    "humidity": 72.13,
+    "solar_radiation": 17.67
+  },
+  {
+    "year": 2022,
+    "month": 10,
+    "temperature": 24.17,
+    "precipitation": 2.93,
+    "humidity": 69.87,
+    "solar_radiation": 15.55
+  },
+  {
+    "year": 2022,
+    "month": 11,
+    "temperature": 19.82,
+    "precipitation": 0.25,
+    "humidity": 64.2,
+    "solar_radiation": 13.59
+  },
+  {
+    "year": 2022,
+    "month": 12,
+    "temperature": 14.67,
+    "precipitation": 0.0,
+    "humidity": 72.58,
+    "solar_radiation": 12.17
+  },
+  {
+    "year": 2023,
+    "month": 1,
+    "temperature": 12.05,
+    "precipitation": 1.46,
+    "humidity": 78.32,
+    "solar_radiation": 12.09
+  },
+  {
+    "year": 2023,
+    "month": 2,
+    "temperature": 18.46,
+    "precipitation": 0.0,
+    "humidity": 60.89,
+    "solar_radiation": 17.07
+  },
+  {
+    "year": 2023,
+    "month": 3,
+    "temperature": 21.86,
+    "precipitation": 2.04,
+    "humidity": 60.87,
+    "solar_radiation": 18.96
+  },
+  {
+    "year": 2023,
+    "month": 4,
+    "temperature": 27.06,
+    "precipitation": 0.1,
+    "humidity": 38.1,
+    "solar_radiation": 22.04
+  },
+  {
+    "year": 2023,
+    "month": 5,
+    "temperature": 29.48,
+    "precipitation": 1.55,
+    "humidity": 45.26,
+    "solar_radiation": 21.07
+  },
+  {
+    "year": 2023,
+    "month": 6,
+    "temperature": 31.07,
+    "precipitation": 4.55,
+    "humidity": 59.27,
+    "solar_radiation": 19.72
+  },
+  {
+    "year": 2023,
+    "month": 7,
+    "temperature": 29.01,
+    "precipitation": 12.05,
+    "humidity": 82.23,
+    "solar_radiation": 18.15
+  },
+  {
+    "year": 2023,
+    "month": 8,
+    "temperature": 30.3,
+    "precipitation": 2.34,
+    "humidity": 68.81,
+    "solar_radiation": 20.11
+  },
+  {
+    "year": 2023,
+    "month": 9,
+    "temperature": 28.99,
+    "precipitation": 2.99,
+    "humidity": 72.13,
+    "solar_radiation": 18.96
+  },
+  {
+    "year": 2023,
+    "month": 10,
+    "temperature": 25.26,
+    "precipitation": 0.51,
+    "humidity": 57.39,
+    "solar_radiation": 17.16
+  },
+  {
+    "year": 2023,
+    "month": 11,
+    "temperature": 20.13,
+    "precipitation": 0.42,
+    "humidity": 70.07,
+    "solar_radiation": 12.84
+  },
+  {
+    "year": 2023,
+    "month": 12,
+    "temperature": 15.31,
+    "precipitation": 0.02,
+    "humidity": 74.26,
+    "solar_radiation": 11.83
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "temperature": 10.78,
+    "precipitation": 0.29,
+    "humidity": 85.45,
+    "solar_radiation": 11.84
+  },
+  {
+    "year": 2024,
+    "month": 2,
+    "temperature": 15.87,
+    "precipitation": 1.39,
+    "humidity": 64.83,
+    "solar_radiation": 16.15
+  },
+  {
+    "year": 2024,
+    "month": 3,
+    "temperature": 21.87,
+    "precipitation": 0.61,
+    "humidity": 49.84,
+    "solar_radiation": 20.26
+  },
+  {
+    "year": 2024,
+    "month": 4,
+    "temperature": 29.39,
+    "precipitation": 0.1,
+    "humidity": 27.03,
+    "solar_radiation": 22.42
+  },
+  {
+    "year": 2024,
+    "month": 5,
+    "temperature": 34.49,
+    "precipitation": 0.05,
+    "humidity": 24.94,
+    "solar_radiation": 23.12
+  },
+  {
+    "year": 2024,
+    "month": 6,
+    "temperature": 34.94,
+    "precipitation": 3.34,
+    "humidity": 38.93,
+    "solar_radiation": 19.92
+  },
+  {
+    "year": 2024,
+    "month": 7,
+    "temperature": 30.26,
+    "precipitation": 8.05,
+    "humidity": 77.87,
+    "solar_radiation": 18.44
+  },
+  {
+    "year": 2024,
+    "month": 8,
+    "temperature": 28.09,
+    "precipitation": 9.15,
+    "humidity": 84.61,
+    "solar_radiation": 16.58
+  },
+  {
+    "year": 2024,
+    "month": 9,
+    "temperature": 27.32,
+    "precipitation": 11.88,
+    "humidity": 82.6,
+    "solar_radiation": 16.24
+  },
+  {
+    "year": 2024,
+    "month": 10,
+    "temperature": 26.39,
+    "precipitation": 0.0,
+    "humidity": 64.81,
+    "solar_radiation": 17.3
+  },
+  {
+    "year": 2024,
+    "month": 11,
+    "temperature": 22.32,
+    "precipitation": 0.0,
+    "humidity": 57.87,
+    "solar_radiation": 13.72
+  },
+  {
+    "year": 2024,
+    "month": 12,
+    "temperature": 15.55,
+    "precipitation": 1.22,
+    "humidity": 63.29,
+    "solar_radiation": 11.42
+  }
+]

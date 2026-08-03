@@ -1,0 +1,65 @@
+{
+  "avg_temperature": 24.53,
+  "max_temperature": 39.2,
+  "min_temperature": 6.7,
+  "warming_rate_per_decade": -0.041,
+  "historical_trend_r_squared": 0.0,
+  "historical_trend_p_value": 0.9179202625516085,
+  "avg_precipitation": 2.09,
+  "anomaly_days": 247,
+  "anomaly_percentage": 6.76,
+  "forecast_trend_per_decade": -0.041,
+  "forecast_trend_r_squared": 0.0,
+  "forecast_trend_p_value": 0.9179202625516085,
+  "trend_consistency_ratio": 1.0,
+  "historical_trend_per_decade": -0.041,
+  "forecast_class": "low_confidence",
+  "classification_reasons": [
+    "Forecast R-squared (0.0000) is below reliability threshold (0.10). Linear trend explains limited forecast variance."
+  ],
+  "recommended_action": "Use with caution. Cross-validate with alternative methods before incorporating into planning decisions.",
+  "forecast_reliability": "Moderate",
+  "forecast_reliability_score": 0.634,
+  "model_r_squared": 0.9788,
+  "validation_n_folds": 3,
+  "validation_avg_rmse": 3.6775,
+  "validation_avg_mae": 3.1334,
+  "validation_avg_mape": 12.8392,
+  "validation_avg_r_squared": 0.742,
+  "benchmark_best_model": "seasonal_naive",
+  "benchmark_use_hw": false,
+  "benchmark_recommendation": "Seasonal Naive outperformed Holt-Winters (RMSE: 3.525 vs 4.247). Consider alternative model for this dataset.",
+  "quality_checks_passed": false,
+  "quality_issues": [
+    "Trend ratio (113.02x) is extremely high, indicating potential model instability."
+  ],
+  "reliability_factors": {
+    "consistency": 1.0,
+    "r_squared": 0.0,
+    "rmse_accuracy": 0.793,
+    "significance": 0.5,
+    "validation": 0.625,
+    "quality": 1.0,
+    "benchmark": 0.4
+  },
+  "analysis_start_year": 2015,
+  "analysis_end_year": 2024,
+  "total_years": 10,
+  "station_name": "New Delhi, India",
+  "station_lat": 28.6139,
+  "station_lon": 77.209,
+  "data_source": "api",
+  "risk_score": 0.3713352783044508,
+  "risk_category": "Moderate",
+  "risk_components": {
+    "temp_trend": 0.0,
+    "rainfall_deviation": 0.5617842610148359,
+    "anomaly_frequency": 0.6759999999999999,
+    "forecast_consistency": 1.0
+  },
+  "data_points": 3653,
+  "date_range": {
+    "start": "2015-01-01",
+    "end": "2024-12-31"
+  }
+}

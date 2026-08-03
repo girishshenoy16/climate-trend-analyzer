@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Trend Analyzer - Executive Dashboard</title>
+    <meta name="description" content="Multi-decadal climate analysis, predictive forecasting, and executive analytics dashboard built with Python, Chart.js, and Leaflet.js.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Executive Analytics Dashboard</div>
+            <h1>Climate Trend Analyzer</h1>
+            <p class="subtitle">Multi-Decadal Climate Analysis &bull; Predictive Forecasting &bull; Risk Assessment</p>
+            <div class="hero-divider"></div>
+            <div class="hero-meta" id="hero-meta">
+                <div class="hero-meta-item">&#128205; <span class="value" id="hero-station">New Delhi, India</span></div>
+                <div class="hero-meta-item">&#128197; <span class="value" id="hero-period">2015 &ndash; 2024</span></div>
+                <div class="hero-meta-item">&#127760; <span class="value" id="hero-source">NASA POWER &bull; Open-Meteo</span></div>
+                <div class="hero-meta-item">&#9881; <span class="value" id="hero-mode">Simulation</span></div>
+                <div class="hero-meta-item">&#128196; <span class="value" id="hero-version">v2.0.0</span></div>
+            </div>
+            <div class="hero-timestamp" id="last-updated"></div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Executive KPI Cards -->
+        <section class="kpi-grid" id="kpi-grid">
+            <div class="kpi-card" data-type="temperature">
+                <div class="kpi-header">
+                    <div class="kpi-icon icon-temperature">&#127777;</div>
+                    <span class="kpi-trend" id="kpi-temp-trend"></span>
+                </div>
+                <div class="kpi-data">
+                    <span class="kpi-value" id="kpi-avg-temp">--</span>
+                    <span class="kpi-label">Avg Temperature</span>
+                    <span class="kpi-unit">&deg;C</span>
+                </div>
+            </div>
+            <div class="kpi-card" data-type="warming">
+                <div class="kpi-header">
+                    <div class="kpi-icon icon-warming">&#128200;</div>
+                    <span class="kpi-trend trend-up">Increasing</span>
+                </div>
+                <div class="kpi-data">
+                    <span class="kpi-value" id="kpi-warming-rate">--</span>
+                    <span class="kpi-label">Warming Rate</span>
+                    <span class="kpi-unit">&deg;C / Decade</span>
+                </div>
+            </div>
+            <div class="kpi-card" data-type="precipitation">
+                <div class="kpi-header">
+                    <div class="kpi-icon icon-precipitation">&#127783;</div>
+                    <span class="kpi-trend" id="kpi-precip-trend"></span>
+                </div>
+                <div class="kpi-data">
+                    <span class="kpi-value" id="kpi-precipitation">--</span>
+                    <span class="kpi-label">Avg Precipitation</span>
+                    <span class="kpi-unit">mm/day</span>
+                </div>
+            </div>
+            <div class="kpi-card" data-type="anomaly">
+                <div class="kpi-header">
+                    <div class="kpi-icon icon-anomaly">&#9888;</div>
+                    <span class="kpi-trend" id="kpi-anomaly-trend"></span>
+                </div>
+                <div class="kpi-data">
+                    <span class="kpi-value" id="kpi-anomaly-days">--</span>
+                    <span class="kpi-label">Anomaly Days</span>
+                    <span class="kpi-unit">detected</span>
+                </div>
+            </div>
+            <div class="kpi-card" data-type="forecast">
+                <div class="kpi-header">
+                    <div class="kpi-icon icon-forecast">&#128202;</div>
+                    <span class="kpi-trend trend-up">Projected</span>
+                </div>
+                <div class="kpi-data">
+                    <span class="kpi-value" id="kpi-forecast-trend">--</span>
+                    <span class="kpi-label">Forecast Trend</span>
+                    <span class="kpi-unit">&deg;C / Decade</span>
+                </div>
+            </div>
+            <div class="kpi-card" data-type="risk">
+                <div class="kpi-header">
+                    <div class="kpi-icon icon-risk">&#9888;</div>
+                    <span class="kpi-trend" id="kpi-risk-badge"></span>
+                </div>
+                <div class="kpi-data">
+                    <span class="kpi-value" id="kpi-risk-category">--</span>
+                    <span class="kpi-label">Climate Risk</span>
+                    <span class="kpi-unit" id="kpi-risk-score">Score: --</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Climate Risk Assessment -->
+        <section class="risk-card" id="risk-card">
+            <div class="risk-header">
+                <span class="risk-icon">&#9888;</span>
+                <h3>Climate Risk Assessment</h3>
+            </div>
+            <div class="risk-body">
+                <div class="risk-level" id="risk-level">--</div>
+                <div class="risk-score-display">
+                    <span class="risk-score-value" id="risk-score-value">--</span>
+                    <span class="risk-score-label">Risk Score</span>
+                </div>
+                <div class="risk-confidence" id="risk-confidence">
+                    <span class="risk-confidence-label">Confidence</span>
+                    <span class="risk-confidence-value" id="risk-confidence-value">--</span>
+                </div>
+                <div class="risk-breakdown" id="risk-breakdown"></div>
+            </div>
+            <div class="risk-interpretation" id="risk-interpretation"></div>
+        </section>
+
+        <!-- Executive Summary -->
+        <section class="executive-summary" id="executive-summary">
+            <h2>&#128202; Executive Summary</h2>
+            <div class="exec-summary-grid" id="exec-summary-grid"></div>
+        </section>
+
+        <!-- Key Insights -->
+        <section class="insight-banner" id="insight-banner" style="display:none;">
+            <div class="insight-header">
+                <h3>&#128161; Key Insights</h3>
+            </div>
+            <div class="insight-grid" id="insight-grid"></div>
+        </section>
+
+        <!-- Trend Analysis Charts -->
+        <section class="chart-section">
+            <h2 class="section-title"><span class="icon">&#128200;</span> Trend Analysis</h2>
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <h3>Temperature Trend</h3>
+                    <canvas id="chart-temperature"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3>Precipitation Trend</h3>
+                    <canvas id="chart-precipitation"></canvas>
+                </div>
+            </div>
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <h3>Relative Humidity Trend</h3>
+                    <canvas id="chart-humidity"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3>Solar Radiation Trend</h3>
+                    <canvas id="chart-solar"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Forecast Analysis -->
+        <section class="chart-section">
+            <h2 class="section-title"><span class="icon">&#128202;</span> Forecast Analysis</h2>
+            <div class="charts-grid charts-single">
+                <div class="chart-card chart-forecast">
+                    <h3>3-Year Temperature Forecast (Holt-Winters Exponential Smoothing)</h3>
+                    <canvas id="chart-forecast"></canvas>
+                </div>
+            </div>
+            <div class="forecast-meta" id="forecast-meta" style="display:none;">
+                <div class="forecast-meta-grid" id="forecast-meta-grid"></div>
+            </div>
+        </section>
+
+        <!-- Anomaly Analysis -->
+        <section class="chart-section">
+            <h2 class="section-title"><span class="icon">&#9888;</span> Anomaly Analysis</h2>
+            <div class="charts-grid charts-single">
+                <div class="chart-card">
+                    <h3>Climate Anomaly Detection</h3>
+                    <canvas id="chart-anomalies"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Monthly Distribution -->
+        <section class="chart-section">
+            <h2 class="section-title"><span class="icon">&#128202;</span> Monthly Distribution</h2>
+            <div class="charts-grid charts-single">
+                <div class="chart-card">
+                    <h3>Average Temperature by Month</h3>
+                    <canvas id="chart-monthly-temp"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Regional Climate Map -->
+        <section class="map-section">
+            <h2 class="section-title"><span class="icon">&#127757;</span> Regional Climate Station</h2>
+            <div id="climate-map"></div>
+            <div class="map-meta" id="map-meta">
+                <div class="map-meta-item">
+                    <span class="map-meta-label">Station</span>
+                    <span class="map-meta-value" id="map-station-name">--</span>
+                </div>
+                <div class="map-meta-item">
+                    <span class="map-meta-label">Latitude</span>
+                    <span class="map-meta-value" id="map-latitude">--</span>
+                </div>
+                <div class="map-meta-item">
+                    <span class="map-meta-label">Longitude</span>
+                    <span class="map-meta-value" id="map-longitude">--</span>
+                </div>
+                <div class="map-meta-item">
+                    <span class="map-meta-label">Data Source</span>
+                    <span class="map-meta-value" id="map-data-source">NASA POWER</span>
+                </div>
+                <div class="map-meta-item">
+                    <span class="map-meta-label">Climate Zone</span>
+                    <span class="map-meta-value" id="map-climate-zone">--</span>
+                </div>
+                <div class="map-meta-item">
+                    <span class="map-meta-label">Coverage</span>
+                    <span class="map-meta-value" id="map-coverage">--</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategic Recommendations -->
+        <section class="recommendations-section" id="recommendations-section" style="display:none;">
+            <h2>&#127919; Strategic Recommendations</h2>
+            <div id="recommendations-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <strong>Climate Trend Analyzer</strong>
+                <span>Automated climate analysis and predictive forecasting system for multi-decadal climate trend detection, risk assessment, and executive decision support.</span>
+            </div>
+            <div class="footer-col">
+                <strong>Data Sources</strong>
+                <ul>
+                    <li>NASA POWER API</li>
+                    <li>Open-Meteo Climate API</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <strong>Technology</strong>
+                <ul>
+                    <li>Python 3.11</li>
+                    <li>Chart.js 4.4</li>
+                    <li>Leaflet.js 1.9</li>
+                    <li>GitHub Pages</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <strong>Project Info</strong>
+                <p>Version 2.0.0</p>
+                <p>Deployment: GitHub Pages</p>
+                <p class="footer-location" id="footer-location">New Delhi, India (28.61&deg;N, 77.21&deg;E)</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Climate Trend Analyzer &mdash; Data Science Portfolio Project
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/map.js"></script>
+</body>
+</html>

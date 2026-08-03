@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+eggs/
+*.whl
+
+# Virtual Environment
+venv/
+env/
+.venv/
+.env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Project Specific
+data/cache/
+data/raw/nasa_power/*.json
+data/raw/open_meteo/*.json
+data/raw/merged/*.json
+outputs/screenshots/
+logs
+implementation_plan.md
+task.md
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large generated files (regenerate with python main.py)
+outputs/figures/*.png
+outputs/reports/*.md
+data/processed/*.csv
+data/raw/*/*.csv

@@ -1,0 +1,13 @@
+{
+  "stations": [
+    {
+      "name": "New Delhi, India",
+      "lat": 28.6139,
+      "lon": 77.209,
+      "avg_temp": 24.53,
+      "total_precip": 7619.4,
+      "anomaly_days": 247,
+      "risk_category": "Moderate"
+    }
+  ]
+}

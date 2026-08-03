@@ -1,0 +1,100 @@
+{
+  "generated_at": "2026-07-25T20:46:31.523781",
+  "pipeline_version": "2.0.0",
+  "report_version": "1.0",
+  "kpis": {
+    "avg_temperature": 24.53,
+    "max_temperature": 39.2,
+    "min_temperature": 6.7,
+    "warming_rate_per_decade": -0.041,
+    "historical_trend_r_squared": 0.0,
+    "historical_trend_p_value": 0.9179202625516085,
+    "avg_precipitation": 2.09,
+    "anomaly_days": 247,
+    "anomaly_percentage": 6.76,
+    "forecast_trend_per_decade": -0.041,
+    "forecast_trend_r_squared": 0.0,
+    "forecast_trend_p_value": 0.9179202625516085,
+    "trend_consistency_ratio": 1.0,
+    "historical_trend_per_decade": -0.041,
+    "forecast_class": "low_confidence",
+    "classification_reasons": [
+      "Forecast R-squared (0.0000) is below reliability threshold (0.10). Linear trend explains limited forecast variance."
+    ],
+    "recommended_action": "Use with caution. Cross-validate with alternative methods before incorporating into planning decisions.",
+    "forecast_reliability": "Moderate",
+    "forecast_reliability_score": 0.634,
+    "model_r_squared": 0.9788,
+    "validation_n_folds": 3,
+    "validation_avg_rmse": 3.6775,
+    "validation_avg_mae": 3.1334,
+    "validation_avg_mape": 12.8392,
+    "validation_avg_r_squared": 0.742,
+    "benchmark_best_model": "seasonal_naive",
+    "benchmark_use_hw": false,
+    "benchmark_recommendation": "Seasonal Naive outperformed Holt-Winters (RMSE: 3.525 vs 4.247). Consider alternative model for this dataset.",
+    "quality_checks_passed": false,
+    "quality_issues": [
+      "Trend ratio (113.02x) is extremely high, indicating potential model instability."
+    ],
+    "reliability_factors": {
+      "consistency": 1.0,
+      "r_squared": 0.0,
+      "rmse_accuracy": 0.793,
+      "significance": 0.5,
+      "validation": 0.625,
+      "quality": 1.0,
+      "benchmark": 0.4
+    },
+    "analysis_start_year": 2015,
+    "analysis_end_year": 2024,
+    "total_years": 10,
+    "station_name": "New Delhi, India",
+    "station_lat": 28.6139,
+    "station_lon": 77.209,
+    "data_source": "api",
+    "risk_score": 0.3713352783044508,
+    "risk_category": "Moderate",
+    "risk_components": {
+      "temp_trend": 0.0,
+      "rainfall_deviation": 0.5617842610148359,
+      "anomaly_frequency": 0.6759999999999999,
+      "forecast_consistency": 1.0
+    }
+  },
+  "risk_score": {
+    "raw_score": 0.3713352783044508,
+    "normalized_score": 0.3713352783044508,
+    "category": "Moderate",
+    "components": {
+      "temp_trend": 0.0,
+      "rainfall_deviation": 0.5617842610148359,
+      "anomaly_frequency": 0.6759999999999999,
+      "forecast_consistency": 1.0
+    }
+  },
+  "insights": [
+    "Temperature trend: -0.041 °C/decade (not statistically significant, R-squared=0.0000). Not statistically significant (p >= 0.05). Insufficient evidence to reject the null hypothesis of no trend.",
+    "Average daily precipitation: 2.09 mm/day.",
+    "Detected 247 anomaly days (6.8% of analysis period).",
+    "3-year forecast projects -0.041 °C/decade, consistent with the historical trend (-0.041 °C/decade). Forecast R-squared=0.0000."
+  ],
+  "recommendations": [
+    "Monitor climate indicators with increased frequency and update risk assessments.",
+    "Update building codes and infrastructure standards to account for observed variability.",
+    "Historical trend is not statistically significant. Extend the analysis period or incorporate additional stations before making long-term projections.",
+    "Low explanatory power (R-squared < 0.1) suggests high natural variability. Focus on understanding variability drivers rather than long-term trend alone.",
+    "High anomaly frequency (6.8%) indicates increased climate variability. Enhance adaptive capacity across critical systems.",
+    "Increase observational coverage and consider integrating additional climate variables (e.g., ENSO indices, aerosol optical depth).",
+    "Review and update projections as additional observational data becomes available."
+  ],
+  "model_metrics": {
+    "rmse": 1.0176856826140843,
+    "mae": 0.7633932981170577,
+    "mape": 3.4344066229016263,
+    "r_squared": 0.9787528880675493
+  },
+  "consistency_warnings": [],
+  "data_quality_status": "PASS",
+  "data_source": "api"
+}
