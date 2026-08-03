@@ -51,5 +51,4 @@ task.md
 # Large generated files (regenerate with python main.py)
 outputs/figures/*.png
 outputs/reports/*.md
-data/processed/*.csv
 data/raw/*/*.csv
