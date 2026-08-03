@@ -29,7 +29,7 @@
 
 ## Live Demo
 
-**[Launch GitHub Pages Dashboard](https://girishshenoy16.github.io/climate-trend-analyzer/)** | **[Launch Streamlit Dashboard](https://climate-trend-analyzer.streamlit.app/)**
+**[Launch GitHub Pages Dashboard](https://girishshenoy16.github.io/climate-trend-analyzer/)** | **[Launch Streamlit Dashboard](https://climate-trend-analyzer-ai.streamlit.app/)**
 
 </div>
 

@@ -38,7 +38,6 @@ data/cache/
 data/raw/nasa_power/*.json
 data/raw/open_meteo/*.json
 data/raw/merged/*.json
-outputs/screenshots/
 logs
 implementation_plan.md
 task.md
